@@ -1,0 +1,53 @@
+
+.tobuy {
+  background-color: transparent;
+  border: 2px solid rgb(85, 203, 0);
+  min-width: 100px;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  border-radius: 15px;
+  margin-bottom: 3%;
+  margin-left: 10px;
+ 
+}
+
+.tobuy:hover {
+  background-color: rgb(57, 202, 46);
+  color: white;
+  cursor: pointer;
+}
+.remove {
+  background-color: transparent;
+  border: 2px solid rgb(255, 15, 15);
+  min-width: 100px;
+  padding: 8px 12px; /* Adjusted padding for better button size */
+  border-radius: 15px;
+}
+
+.remove:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .productName,
+  .price {
+    font-size: 14px; /* Decrease font size */
+    margin-bottom: 3px; /* Reduce space between product name and price */
+  }
+  .tobuy,
+  .remove {
+    margin: 5px 0; /* Adjust margin for better spacing */
+    width: 50%; /* Make buttons take full width */
+  }
+}
